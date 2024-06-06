@@ -65,3 +65,34 @@
    - You can set default values for function parameters.
    - If an argument is omitted, the default value is used.
    - Example: `fun greet(name: String = "Guest") { ... }`
+
+# Conditionals
+
+In Kotlin, branching can be achieved with `if/else` or `when` conditionals. Here are the main points:
+
+1. **`if/else` Conditionals:**
+   - The body of an `if` branch in an `if/else` conditional is executed only when the boolean expression inside the `if` branch condition returns a true value.
+   - Subsequent `else if` branches in an `if/else` conditional get executed only when previous `if` or `else if` branches return false values.
+   - The final `else` branch in an `if/else` conditional only gets executed when all previous `if` or `else if` branches return false values.
+
+2. **`when` Conditionals:**
+   - It's recommended to use the `when` conditional to replace an `if/else` conditional when there are more than two branches.
+   - You can write more complex conditions in `when` conditionals using:
+     - Comma (`,`) to match multiple cases.
+     - Ranges (e.g., `1..10`) to match a range of values.
+     - The `is` keyword to check type compatibility.
+
+3. **Conditionals as Statements or Expressions:**
+   - Both `if/else` and `when` conditionals can work as either statements or expressions.
+   - When used as expressions, they return a value based on the condition met.
+    Example:
+    ```kotlin
+    val rank = 2
+    val rankLabel = when (rank) {
+        1 -> "Winner"
+        2 -> "First Runner Up"
+        3 -> "Second Runner Up"
+        else -> "Participant"
+    }
+    println(rankLabel)
+    ```
