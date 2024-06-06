@@ -66,7 +66,7 @@
    - If an argument is omitted, the default value is used.
    - Example: `fun greet(name: String = "Guest") { ... }`
 
-# Conditionals
+## 3. Conditionals
 
 In Kotlin, branching can be achieved with `if/else` or `when` conditionals. Here are the main points:
 
