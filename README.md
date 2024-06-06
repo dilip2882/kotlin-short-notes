@@ -85,6 +85,7 @@ In Kotlin, branching can be achieved with `if/else` or `when` conditionals. Here
 3. **Conditionals as Statements or Expressions:**
    - Both `if/else` and `when` conditionals can work as either statements or expressions.
    - When used as expressions, they return a value based on the condition met.
+   
     Example:
     ```kotlin
     val rank = 2
