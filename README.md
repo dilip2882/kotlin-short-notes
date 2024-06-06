@@ -85,7 +85,7 @@ In Kotlin, branching can be achieved with `if/else` or `when` conditionals. Here
 3. **Conditionals as Statements or Expressions:**
    - Both `if/else` and `when` conditionals can work as either statements or expressions.
    - When used as expressions, they return a value based on the condition met.
-   
+
     Example:
     ```kotlin
     val rank = 2
@@ -97,3 +97,11 @@ In Kotlin, branching can be achieved with `if/else` or `when` conditionals. Here
     }
     println(rankLabel)
     ```
+## 4. Nullability in Kotlin
+- A variable can be set to null to indicate that it holds no value.
+- Non-nullable variables cannot be assigned null.
+- Nullable variables can be assigned null.
+- To access methods or properties of nullable variables, you need to use `.?` safe-call operators or `!!` not-null assertion operators.
+- You can use `if/else` statements with null checks to access nullable variables in non-nullable contexts.
+- You can convert a nullable variable to a non-nullable type with `if/else` expressions.
+- You can provide a default value for when a nullable variable is null with the `if/else` expression or the `?:` Elvis operator.
