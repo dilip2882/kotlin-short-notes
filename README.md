@@ -88,14 +88,16 @@ In Kotlin, branching can be achieved with `if/else` or `when` conditionals. Here
 
     Example:
     ```kotlin
-    val rank = 2
-    val rankLabel = when (rank) {
-        1 -> "Winner"
-        2 -> "First Runner Up"
-        3 -> "Second Runner Up"
-        else -> "Participant"
+    println("Enter age: ")
+    val age = readLine()?.toInt()
+    when(age) {
+        in 0..5 -> println("Infant")
+        in 6..17 -> println("Teen")
+        18 -> println("Finally 18")
+        19,20 -> println("Young Adult")
+        in 21..65 -> println("Adult")
+        else -> println("Old")
     }
-    println(rankLabel)
     ```
 ## 4. Nullability in Kotlin
 - A variable can be set to null to indicate that it holds no value.
